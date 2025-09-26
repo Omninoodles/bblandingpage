@@ -2753,18 +2753,19 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
-		.spotlight .image {
-			width: 30%;
-			border-radius: 100%;
-			margin: 0 3em 0 0;
-			display: block;
-		}
+	.spotlight .image {
+	width: 30%;
+	aspect-ratio: 1 / 1;     /* forces a square box */
+	border-radius: 50%;
+	overflow: hidden;         /* hides any overflow after rounding */
+	}
 
-			.spotlight .image img {
-				display: block;
-				border-radius: 100%;
-				width: 100%;
-			}
+		.spotlight .image img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;        /* fills the square without squishing */
+		border-radius: 50%;       /* optional (container already rounded) */
+		}
 
 		.spotlight .content {
 			width: 70%;
