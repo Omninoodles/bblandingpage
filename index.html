@@ -1,98 +1,373 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <title>BuffBuddy</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-</head>
-<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
 
-    <!-- Header -->
-    <header id="header">
-        <div class="content">
-            <h1><a href="#">BuffBuddy</a></h1>
-            <p>Track your progress, stay motivated,<br />and crush your fitness goals.</p>
-            <ul class="actions">
-                <li><a href="#" class="button primary icon solid fa-download">Get Started for Free</a></li>
-                <li><a href="#one" class="button icon solid fa-chevron-down scrolly">Discover More</a></li>
-            </ul>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BuffBuddy — Know If You're Getting Stronger</title>
+    <meta name="description"
+        content="BuffBuddy tracks your workouts, shows your progress over time, and helps you hit new personal records. Free to get started on iPhone." />
+    <meta property="og:title" content="BuffBuddy — Know If You're Getting Stronger" />
+    <meta property="og:description"
+        content="Log workouts, track your PRs, see your progress over time, and train with friends. Free to get started on iPhone." />
+    <meta property="og:image" content="images/bb screenshot.jpg" />
+    <meta name="theme-color" content="#0B0C0B" />
+    <link rel="icon" href="images/icon-circle.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <!-- ==================== NAV ==================== -->
+    <nav id="nav">
+        <a class="nav-logo" href="#">
+            <img src="images/logo.png" alt="BuffBuddy" />
+            BuffBuddy
+        </a>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#download" class="nav-download">Get Started</a></li>
+        </ul>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="hero">
+        <div class="hero-copy">
+            <span class="hero-eyebrow" data-animate>Now available on iPhone</span>
+            <h1 class="hero-h1" data-animate data-animate-delay="1">
+                Know if you're<br /><span>getting stronger.</span>
+            </h1>
+            <p class="hero-lead" data-animate data-animate-delay="2">
+                BuffBuddy logs every set and every rep, then shows you exactly how your strength is trending. See what
+                you lifted last session, watch your PRs stack up, and never wonder if the work is paying off.
+            </p>
+            <div class="store-row" data-animate data-animate-delay="3">
+                <a href="https://apps.apple.com/us/app/buffbuddy/id6751866156" target="_blank" rel="noopener" class="store-btn">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path
+                            d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                    </svg>
+                    <span class="store-btn-text">
+                        <span class="store-line1">Download on the</span>
+                        <span class="store-line2">App Store</span>
+                    </span>
+                </a>
+            </div>
+            <p class="hero-microcopy" data-animate data-animate-delay="4">Free to get started. Available on iPhone.</p>
         </div>
-        <div class="image phone">
-            <div class="inner">
-                <img src="images/bb screenshot.jpg" alt="BuffBuddy App" />
+
+        <div class="hero-visual" data-animate data-animate-delay="2">
+            <div class="phone-wrap">
+                <div class="phone-outer">
+                    <div class="phone-notch"></div>
+                    <div class="phone-screen">
+                        <img src="images/bb screenshot.jpg" alt="BuffBuddy app showing workout tracking interface" />
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
-
-    <!-- Section One -->
-    <section id="one" class="wrapper style2 special">
-        <header class="major">
-            <h2>Track. Lift. Dominate.</h2>
-            <p>With BuffBuddy, you can track every lift, record your PRs,<br />and analyze your progress with detailed stats.</p>
-        </header>
-        <ul class="icons major">
-            <li><span class="icon solid fa-chart-line"><span class="label">Analyze</span></span></li>
-            <li><span class="icon solid fa-dumbbell"><span class="label">Track</span></span></li>
-            <li><span class="icon solid fa-fire"><span class="label">Achieve</span></span></li>
-        </ul>
     </section>
 
-    <!-- Section Two -->
-    <section id="two" class="wrapper">
-        <div class="inner alt">
-            <section class="spotlight">
-                <div class="image"><img src="images/loadingplates.jpg" alt="Workout Tracker" /></div>
-                <div class="content">
-                    <h3>Intuitive Workout Logging</h3>
-                    <p>Log your exercises, sets, reps, and weights in seconds.</p>
+    <!-- ==================== TRUST BAR ==================== -->
+    <div id="trust">
+        <div class="trust-inner">
+            <div class="trust-item" data-animate>
+                <span class="trust-value">Free to Start</span>
+            </div>
+            <div class="trust-item" data-animate data-animate-delay="1">
+                <span class="trust-value">iPhone</span>
+                <span class="trust-label">Available on iOS</span>
+            </div>
+            <div class="trust-item" data-animate data-animate-delay="2">
+                <span class="trust-value">PR Tracking</span>
+                <span class="trust-label">Every exercise, every session</span>
+            </div>
+            <div class="trust-item" data-animate data-animate-delay="3">
+                <span class="trust-value">Train Together</span>
+                <span class="trust-label">Share with friends</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PROBLEM ==================== -->
+    <section id="problem">
+        <span class="problem-kicker" data-animate>The problem with most apps</span>
+        <h2 class="problem-h2" data-animate data-animate-delay="1">
+            You're putting in the work.<br />But are you actually improving?
+        </h2>
+        <p class="problem-body" data-animate data-animate-delay="2">
+            Most people who train consistently have no real answer to that question. They feel like they're working
+            hard, but without tracking the numbers, there's no way to know if this week's you is stronger than last
+            month's you.
+        </p>
+        <p class="problem-body" data-animate data-animate-delay="3">
+            BuffBuddy fixes that. Every time you train, your history is there. You'll see what you lifted last session,
+            watch your strength trend upward over time, and see your personal bests stack up after each session.
+        </p>
+    </section>
+
+    <!-- ==================== FEATURES ==================== -->
+    <div id="features">
+
+        <!-- Feature 1: Logging -->
+        <div class="feature-row">
+            <div class="feature-image-wrap" data-animate>
+                <img src="images/loadingplates.jpg" alt="Workout plates loaded for a set" />
+            </div>
+            <div class="feature-text-wrap" data-animate data-animate-delay="2">
+                <span class="feature-num">01 / Logging</span>
+                <h3 class="feature-h3">Logging a workout should be <strong>fast and effortless.</strong></h3>
+                <p class="feature-body">
+                    BuffBuddy is built around speed. Log your sets as you go, without breaking your focus or slowing
+                    down between exercises. The interface stays out of your way so you can stay in yours.
+                </p>
+                <p class="feature-body">
+                    You can also pull up what you did last session for any exercise while you're training. So when
+                    you're loading the bar, you know exactly what number you're chasing.
+                </p>
+                <div class="feature-detail">
+                    <div class="feature-detail-item">Log sets and reps as you go, one tap at a time</div>
+                    <div class="feature-detail-item">See your previous session for any exercise mid-workout</div>
+                    <div class="feature-detail-item">Build and save as many custom workout plans as you need</div>
                 </div>
-            </section>
-            <section class="spotlight">
-                <div class="image"><img src="images/barbell.jpg" alt="Detailed Analytics" /></div>
-                <div class="content">
-                    <h3>Detailed Performance Analytics</h3>
-                    <p>Review trends in your workouts, track each workout, and push yourself to set new personal records every week.</p>
+            </div>
+        </div>
+
+        <!-- Feature 2: PRs and Analytics -->
+        <div class="feature-row flip">
+            <div class="feature-image-wrap" data-animate>
+                <img src="images/barbell.jpg" alt="Barbell ready to lift" />
+            </div>
+            <div class="feature-text-wrap" data-animate data-animate-delay="2">
+                <span class="feature-num">02 / Progress</span>
+                <h3 class="feature-h3">See exactly how your <strong>strength is trending.</strong></h3>
+                <p class="feature-body">
+                    After each session, BuffBuddy updates your personal records for every exercise you logged. Weight
+                    PRs, rep PRs, tracked automatically so you never have to wonder where you stand.
+                </p>
+                <p class="feature-body">
+                    Pull up any exercise and see your performance over time as a chart. Two months of progress laid out
+                    visually is motivating in a way that a list of numbers never is.
+                </p>
+                <div class="feature-detail">
+                    <div class="feature-detail-item">Personal records tracked per exercise, updated after every session
+                    </div>
+                    <div class="feature-detail-item">Visual progress charts for any exercise in your history</div>
+                    <div class="feature-detail-item">Your full workout history, searchable and filterable by date</div>
                 </div>
-            </section>
-            <section class="special">
-                <ul class="icons labeled">
-                    <li><span class="icon solid fa-dumbbell"><span class="label">Workout Tracking</span></span></li>
-                    <li><span class="icon solid fa-chart-line"><span class="label">Performance Analytics</span></span></li>
-                    <li><span class="icon solid fa-fire"><span class="label">Personal Records</span></span></li>
-                </ul>
-            </section>
+            </div>
+        </div>
+
+        <!-- Feature 3: Friends & Sharing -->
+        <div class="feature-row">
+            <div class="feature-image-wrap feature-image-social" data-animate>
+                <div class="social-mock" aria-hidden="true">
+                    <div class="social-mock-header">Friends</div>
+                    <div class="social-mock-item">
+                        <div class="mock-avatar">JT</div>
+                        <div class="mock-info">
+                            <div class="mock-name">Jake T.</div>
+                            <div class="mock-activity">Shared "Push Day A"</div>
+                        </div>
+                        <div class="mock-badge">New</div>
+                    </div>
+                    <div class="social-mock-item">
+                        <div class="mock-avatar">SR</div>
+                        <div class="mock-info">
+                            <div class="mock-name">Sam R.</div>
+                            <div class="mock-activity">Shared "Leg Day"</div>
+                        </div>
+                        <div class="mock-badge">New</div>
+                    </div>
+                    <div class="social-mock-item muted">
+                        <div class="mock-avatar muted-av">AL</div>
+                        <div class="mock-info">
+                            <div class="mock-name">Alex L.</div>
+                            <div class="mock-activity">Friend since March</div>
+                        </div>
+                    </div>
+                    <div class="social-mock-divider"></div>
+                    <div class="social-mock-cta">Add friend via QR code</div>
+                </div>
+            </div>
+            <div class="feature-text-wrap" data-animate data-animate-delay="2">
+                <span class="feature-num">03 / Social</span>
+                <h3 class="feature-h3">Train with friends.<br /><strong>Share what's working.</strong></h3>
+                <p class="feature-body">
+                    Add friends directly in the app and share your workout plans with them. When a training partner has
+                    a routine you want to try, they can send it over and you have it ready to go.
+                </p>
+                <p class="feature-body">
+                    Having someone in your corner, even virtually, changes how you show up. BuffBuddy makes it easy to
+                    stay connected with the people you train with.
+                </p>
+                <div class="feature-detail">
+                    <div class="feature-detail-item">Add friends and share complete workout plans</div>
+                    <div class="feature-detail-item">Accept shared plans directly into your library</div>
+                    <div class="feature-detail-item">Build your circle and keep each other accountable</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ==================== STATS ==================== -->
+    <section id="stats">
+        <div class="stats-inner">
+            <div class="stats-copy" data-animate>
+                <h2>A home screen that shows you where you stand.</h2>
+                <p>Every time you open the app, you see your current training streak, the total volume you've lifted
+                    across all sessions, and your most recent personal record. The three numbers that tell you whether
+                    the work is paying off.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card" data-animate>
+                    <div class="stat-num">Log</div>
+                    <div class="stat-desc">Every workout, every session, all in one place</div>
+                </div>
+                <div class="stat-card" data-animate data-animate-delay="1">
+                    <div class="stat-num">Track</div>
+                    <div class="stat-desc">See your strength progress over time with charts</div>
+                </div>
+                <div class="stat-card" data-animate data-animate-delay="2">
+                    <div class="stat-num">Share</div>
+                    <div class="stat-desc">Train together and swap workout plans with friends</div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Section Three -->
-    <section id="three" class="wrapper style2 special">
-        <header class="major">
-            <h2>Ready to Crush Your Workouts?</h2>
-            <p>Join our fast-growing community and let's<br />reach your goals faster and smarter.</p>
-        </header>
-        <ul class="actions special">
-            <li><a href="#" class="button primary icon solid fa-download">Get the App for Free</a></li>
-        </ul>
+    <!-- ==================== SUMMARY MOMENT ==================== -->
+    <section id="summary">
+        <h2 class="summary-h2" data-animate>
+            End every session knowing<br />exactly what you accomplished.
+        </h2>
+        <p class="summary-body" data-animate data-animate-delay="1">
+            When you finish a workout, BuffBuddy wraps it up with a summary of your total sets, exercises completed, and
+            total volume lifted. If you hit a personal record during the session, that gets called out too.
+        </p>
+        <div data-animate data-animate-delay="2">
+            <div class="summary-card">
+                <div class="summary-stat">
+                    <div class="num">18</div>
+                    <div class="lbl">Total Sets</div>
+                </div>
+                <div class="summary-stat">
+                    <div class="num">5</div>
+                    <div class="lbl">Exercises</div>
+                </div>
+                <div class="summary-stat">
+                    <div class="num">12,400</div>
+                    <div class="lbl">Lbs Lifted</div>
+                </div>
+            </div>
+            <p class="summary-sub">New personal record on bench press.</p>
+        </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="footer">
-        <ul class="legal">
-            <li><a href="terms.html">Terms and Conditions</a></li>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-        </ul>
-    </footer>
-    
+    <!-- ==================== FINAL CTA ==================== -->
+    <section id="download">
+        <div class="download-inner">
+            <span class="download-kicker" data-animate>Available now on iPhone</span>
+            <h2 class="download-h2" data-animate data-animate-delay="1">
+                Start your first<br />workout today.
+            </h2>
+            <p class="download-sub" data-animate data-animate-delay="2">
+                Free to get started. Available on iPhone.
+            </p>
+            <div class="download-badges" data-animate data-animate-delay="3">
+                <a href="https://apps.apple.com/us/app/buffbuddy/id6751866156" target="_blank" rel="noopener" class="store-btn">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path
+                            d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                    </svg>
+                    <span class="store-btn-text">
+                        <span class="store-line1">Download on the</span>
+                        <span class="store-line2">App Store</span>
+                    </span>
+                </a>
+            </div>
+            <p class="download-note" data-animate data-animate-delay="4">Free to get started. No credit card required.
+            </p>
+        </div>
+    </section>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!-- ==================== FOOTER ==================== -->
+    <footer id="footer">
+        <div class="footer-inner">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="BuffBuddy" />
+                BuffBuddy
+            </div>
+            <ul class="footer-links">
+                <li><a href="terms.html">Terms and Conditions</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+            <p class="footer-copy">&copy; 2025 Omninoodle. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            // Nav: add scrolled class when page scrolls
+            var nav = document.getElementById('nav');
+            function onScroll() {
+                nav.classList.toggle('scrolled', window.scrollY > 40);
+            }
+            window.addEventListener('scroll', onScroll, { passive: true });
+            onScroll();
+
+            // Scroll animations via IntersectionObserver
+            var animEls = document.querySelectorAll('[data-animate]');
+            if ('IntersectionObserver' in window) {
+                var observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+                animEls.forEach(function (el) { observer.observe(el); });
+            } else {
+                animEls.forEach(function (el) { el.classList.add('visible'); });
+            }
+
+            // Counter animation for stat numbers
+            function animateCount(el, target, suffix) {
+                var start = performance.now();
+                var duration = 1400;
+                function step(now) {
+                    var elapsed = Math.min((now - start) / duration, 1);
+                    // Ease out cubic
+                    var progress = 1 - Math.pow(1 - elapsed, 3);
+                    var val = Math.round(progress * target);
+                    el.textContent = val.toLocaleString() + (suffix || '');
+                    if (elapsed < 1) requestAnimationFrame(step);
+                }
+                requestAnimationFrame(step);
+            }
+
+            var countEls = document.querySelectorAll('[data-count]');
+            if ('IntersectionObserver' in window) {
+                var countObserver = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            var el = entry.target;
+                            animateCount(el, parseInt(el.dataset.count, 10), el.dataset.suffix || '');
+                            countObserver.unobserve(el);
+                        }
+                    });
+                }, { threshold: 0.5 });
+                countEls.forEach(function (el) { countObserver.observe(el); });
+            }
+        })();
+    </script>
 
 </body>
+
 </html>
