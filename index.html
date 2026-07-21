@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>BuffBuddy — Know If You're Getting Stronger</title>
+    <title>BuffBuddy</title>
     <meta name="description"
         content="BuffBuddy tracks your workouts, shows your progress over time, and helps you hit new personal records. Free to get started on iPhone." />
-    <meta property="og:title" content="BuffBuddy — Know If You're Getting Stronger" />
+    <meta property="og:title" content="BuffBuddy - Know If You're Getting Stronger" />
     <meta property="og:description"
         content="Log workouts, track your PRs, see your progress over time, and train with friends. Free to get started on iPhone." />
-    <meta property="og:image" content="images/bb screenshot.jpg" />
+    <meta property="og:image" content="images/Color_Corrected/Hero2.jpg" />
     <meta name="theme-color" content="#0B0C0B" />
     <link rel="icon" href="images/icon-circle.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -65,7 +65,12 @@
                 <div class="phone-outer">
                     <div class="phone-notch"></div>
                     <div class="phone-screen">
-                        <img src="images/bb screenshot.jpg" alt="BuffBuddy app showing workout tracking interface" />
+                        <div class="phone-carousel" id="phone-carousel">
+                            <img src="images/Color_Corrected/Hero2.jpg" alt="BuffBuddy app showing workout logging" />
+                            <img src="images/Color_Corrected/Hero3.jpg" alt="BuffBuddy app showing progress charts" />
+                            <img src="images/Color_Corrected/Hero4.jpg" alt="BuffBuddy app showing personal records" />
+                            <img src="images/Color_Corrected/Hero5.jpg" alt="BuffBuddy app showing friends and sharing" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -307,12 +312,31 @@
                 <li><a href="terms.html">Terms and Conditions</a></li>
                 <li><a href="privacy.html">Privacy Policy</a></li>
             </ul>
-            <p class="footer-copy">&copy; 2025 Omninoodle. All rights reserved.</p>
+            <p class="footer-copy">&copy; <span id="copy-year">2025</span> Omninoodle. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
         (function () {
+            // Footer: keep copyright year current
+            var copyYear = document.getElementById('copy-year');
+            if (copyYear) copyYear.textContent = new Date().getFullYear();
+
+            // Hero phone: auto-scroll through screenshots, left to right
+            var carousel = document.getElementById('phone-carousel');
+            if (carousel) {
+                var slides = carousel.children.length;
+                var step = 100 / slides;
+                var current = 0;
+                var interval = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 2600;
+                if (interval) {
+                    setInterval(function () {
+                        current = (current + 1) % slides;
+                        carousel.style.transform = 'translateX(-' + (current * step) + '%)';
+                    }, interval);
+                }
+            }
+
             // Nav: add scrolled class when page scrolls
             var nav = document.getElementById('nav');
             function onScroll() {
